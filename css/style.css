@@ -58,3 +58,11 @@ li{
     background-repeat: no-repeat;
     color: #fff;
 }
+
+li.hidden {
+    display: none;     
+}
+.title-invisible{
+    font-size: 1px;
+    color: black;
+}
