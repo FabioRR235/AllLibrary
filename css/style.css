@@ -6,19 +6,19 @@ body{
     background-color: bisque;
 }
 
-
-.logo{
+.navbar{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
     color: #fff;
-    font-family: 'Playfair Display', serif;
+    flex-direction: column;
+    font-size: medium;
     font-weight: 100;
+    font-family: 'Playfair Display', serif;
 }
 /*Barra de pesquisa*/
 input[type="text"] {
     width: 350px;
-    height: 20px;
+    height: 60px;
     color: #fff;
     padding: 15px;
     background-color: #821b1b;
@@ -26,12 +26,35 @@ input[type="text"] {
     border-radius: 5px;
     font-size: 35px;
     margin-top: 25px;
-    margin-left: 40%;
 }
 input[type="text"]:focus{
     width: 500px;
     transition: 0.5s;
 }
 input::placeholder{
+    color: #fff;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+/*Livros*/
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+li{
+    margin:55px;
+    width: 400px;
+    height: 600px;
+    border: 5px solid white;
+    display: flex;
+    justify-content: center;
+    background-image: url(/img/livro.png);
+    background-repeat: no-repeat;
     color: #fff;
 }
