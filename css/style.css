@@ -10,10 +10,14 @@ body{
     display: flex;
     justify-content: center;
     color: #fff;
-    flex-direction: column;
+    flex-direction: row;
     font-size: medium;
     font-weight: 100;
     font-family: 'Playfair Display', serif;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
 }
 /*Barra de pesquisa*/
 input[type="text"] {
@@ -23,7 +27,7 @@ input[type="text"] {
     padding: 15px;
     background-color: #821b1b;
     border: 3px solid white;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 35px;
     margin-top: 25px;
 }
@@ -48,21 +52,20 @@ ul{
     flex-wrap: wrap;
 }
 li{
-    margin:55px;
+    margin:15px;
     width: 400px;
     height: 600px;
-    border: 5px solid white;
-    display: flex;
-    justify-content: center;
-    background-image: url(/img/livro.png);
-    background-repeat: no-repeat;
-    color: #fff;
+    border: 5px solid #821b1b;
+    border-radius: 15px;
+    filter: blur(0);
 }
 
 li.hidden {
+    transform: translate(0.5,0.5);
     display: none;     
 }
 .title-invisible{
     font-size: 1px;
-    color: black;
+    color: transparent;
 }
+
