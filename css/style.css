@@ -5,20 +5,19 @@
 body{
     background-color: bisque;
 }
-
+/*Nav-Bar*/
 .navbar{
-    display: flex;
-    justify-content: center;
-    color: #fff;
-    flex-direction: row;
-    font-size: medium;
-    font-weight: 100;
-    font-family: 'Playfair Display', serif;
+    justify-content: baseline;
 }
-.logo{
-    display: flex;
-    flex-direction: column;
+.navbar-brand{
+    font-size: 2.25rem;
+    font-weight: 400;
 }
+.rounded-bottom {
+    border-bottom-right-radius: 2.25rem!important;
+    border-bottom-left-radius: 2.25rem!important;
+}
+
 /*Barra de pesquisa*/
 input[type="text"] {
     width: 350px;
@@ -44,20 +43,16 @@ input::placeholder{
     margin: 15px;
 }
 /*Livros*/
-ul{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+#livros{
+    margin-top: 200px ;
 }
-li{
+.item-book{
     margin:15px;
     width: 400px;
     height: 600px;
     border: 5px solid #821b1b;
     border-radius: 15px;
-    filter: blur(0);
+    cursor: pointer;
 }
 
 li.hidden {
