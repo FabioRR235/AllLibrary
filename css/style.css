@@ -54,6 +54,9 @@ input::placeholder{
     border-radius: 15px;
     cursor: pointer;
 }
+.item-book{
+    
+}
 
 li.hidden {
     transform: translate(0.5,0.5);
