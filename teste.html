@@ -1,94 +1,34 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <style>
+    body{
+        background-color: #821b1b;
+    }
+    :root{
+        --font-content:'Times New Roman', Times, serif;
+    }
+  </style>
+  <body class="p-3 m-0 border-0 bd-example m-0 border-0">
+
+    <!-- Example Code -->
     
-<style>
-    .img-modal{
-        display: grid;
-        place-items: center;
-        max-width: 100%;
-        height: auto;
-    }
-    .modal-body{
-        background-color: bisque;
-    }
-</style>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-<div class="img-book">
-    <button type="button" class="" data-toggle="modal" data-target="#myModal">
-        <img src="img/acotar.jpg" alt="">
-    </button>
-
-</div>
-
-<div class="img-book">
-    <button type="button" class="" data-toggle="modal" data-target="#yModal">
-        <img src="img/aculpaédasestrelas.jpg" alt="">
-    </button>
-
-</div>
-
-<div class="modal fade" id="myModal" >
-  <div class="modal-dialog modal-xl">
-    <div class="modal-content" >
-        <div class="modal-content">
-      <!-- Conteúdo do modal aqui -->
-      <div class="modal-header" style="background-color: bisque;">
-        <h2 class="modal-title">Corte de espinhos e rosas</h2>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-      <div class="modal-body">
-        <h3>Titulo:</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore culpa a commodi adipisci eveniet veniam! Quibusdam, voluptatum, minima tempore harum consequatur nam nulla autem doloribus qui exercitationem maxime atque possimus?</p>
-        <h3>Autor:</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore culpa a commodi adipisci eveniet veniam! Quibusdam, voluptatum, minima tempore harum consequatur nam nulla autem doloribus qui exercitationem maxime atque possimus?</p>
-        <h3>Ano de publicação:</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore culpa a commodi adipisci eveniet veniam! Quibusdam, voluptatum, minima tempore harum consequatur nam nulla autem doloribus qui exercitationem maxime atque possimus?</p>
-        <h3>Gênero:</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore culpa a commodi adipisci eveniet veniam! Quibusdam, voluptatum, minima tempore harum consequatur nam nulla autem doloribus qui exercitationem maxime atque possimus?</p>
-        <h3>Sinopse:</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet ullam explicabo corrupti consectetur! Praesentium explicabo atque laudantium aliquid illum nihil fugiat sit quos quidem tempore iusto, rem eum id itaque.</p>
+    <div class="card text-white border border-white p-5 gap-3 mb-3 d-flex flex-row justify-content-center flex-wrap-reverse" style="background-color: transparent;">
+        <img src="img/book-inicial.png" alt="">
+        <div class="card-body">
+        <h5 class="card-title fs-1" style="font-family:var(--font-content);">All Library</h5>
+        <p class="card-text fs-3" style="font-family:var(--font-content);">Bem-vindo à nossa Biblioteca Online, onde as páginas virtuais se abrem para um universo ilimitado de sabedoria. Explore o vasto acervo de livros, artigos, revistas e muito mais, tudo ao alcance de seus dedos, 24 horas por dia, 7 dias por semana.
+        Navegue por uma coleção diversificada que abraça desde os clássicos atemporais até as mais recentes descobertas em todas as áreas do conhecimento. Não importa se você é um ávido leitor, um estudante em busca de recursos acadêmicos ou apenas um curioso em busca de inspiração; aqui, você encontrará tesouros para enriquecer sua mente.
+        </p>
       </div>
     </div>
-  </div>
-</div>
-
-
-
-<div class="modal fade" id="yModal" >
-  <div class="modal-dialog modal-xl">
-    <div class="modal-content" >
-        <div class="modal-content">
-      <!-- Conteúdo do modal aqui -->
-      <div class="modal-header" style="background-color: bisque;">
-        <h2 class="modal-title">Corte de espinhos e rosas</h2>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-      <div class="modal-body">
-        <h3>Titulo:</h3>
-            <p>aaaLorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore culpa a commodi adipisci eveniet veniam! Quibusdam, voluptatum, minima tempore harum consequatur nam nulla autem doloribus qui exercitationem maxime atque possimus?</p>
-        <h3>Autor:</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore culpa a commodi adipisci eveniet veniam! Quibusdam, voluptatum, minima tempore harum consequatur nam nulla autem doloribus qui exercitationem maxime atque possimus?</p>
-        <h3>Ano de publicação:</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore culpa a commodi adipisci eveniet veniam! Quibusdam, voluptatum, minima tempore harum consequatur nam nulla autem doloribus qui exercitationem maxime atque possimus?</p>
-        <h3>Gênero:</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore culpa a commodi adipisci eveniet veniam! Quibusdam, voluptatum, minima tempore harum consequatur nam nulla autem doloribus qui exercitationem maxime atque possimus?</p>
-        <h3>Sinopse:</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet ullam explicabo corrupti consectetur! Praesentium explicabo atque laudantium aliquid illum nihil fugiat sit quos quidem tempore iusto, rem eum id itaque.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-</body>
+    <!-- End Example Code -->
+  </body>
 </html>
