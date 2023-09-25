@@ -67,14 +67,25 @@ button {
   }
 /*Seções*/
 section{
-  display: grid;
-  align-items: center;
-  place-items: center;
   min-height: 100vh;
   padding: 25px;
 }
 
-
+/*Card*/
+.card{
+  margin-top: 22vh;
+}
+.card-title{
+  font-size: 45px;
+}
+.card-text{
+  font-size: 25px;
+  text-align: justify;
+}
+.imagem{
+  width: auto;
+  height: auto;
+}
 /*animação*/
 [data-anime]{
   opacity: 0;
