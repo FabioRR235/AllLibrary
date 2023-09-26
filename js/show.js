@@ -6,9 +6,7 @@ const animeScroll = () => {
   item.forEach(element => {
     if (windowTop > element.offsetTop) {
       element.classList.add("animate");
-    } else {
-      element.classList.remove("animate"); // Adicionando o bloco "else" para remover a classe
-    }
+    } 
   });
 };
 
