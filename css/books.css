@@ -28,6 +28,7 @@ body{
 .card{
     margin: 18vh 15vw 5vh 15vw;
     font-family: var(--font-content);
+    box-shadow: 1px 6px 15px 0px #821b1b;
 }
 .card-header{
     font-size: 50px;
