@@ -10,7 +10,6 @@ body{
 }
 /*Nav-Bar*/
 .navbar{
-
     font-family: var(--font-content);
     align-items: center;
 }

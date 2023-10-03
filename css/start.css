@@ -20,7 +20,9 @@ a:hover{
 }
 /*Nav-Bar*/
 .navbar{
-    justify-content: baseline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: var(--font-content);
     z-index: 1000;
     top: 0 ;
