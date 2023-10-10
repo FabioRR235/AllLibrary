@@ -6,7 +6,9 @@
     padding: 0;
 }
 body{
-    background-color: #902a2a;
+  background-image: url(/img/bg.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 a{
     color: #fff;
@@ -75,13 +77,18 @@ section{
 
 /*Card*/
 .card{
-  margin-top: 22vh;
+  margin: 20vh 20vw 20vh 20vw;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .card-title{
   font-size: 45px;
 }
 .card-text{
-  font-size: 25px;
+  font-size: 35px;
   text-align: justify;
 }
 .imagem{
