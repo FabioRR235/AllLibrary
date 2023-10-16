@@ -8,6 +8,7 @@
 body{
     background-color: bisque;
 }
+
 /*Nav-Bar*/
 .navbar{
     justify-content: baseline;
@@ -72,7 +73,7 @@ li.hidden {
 
 /*animação*/
 [data-anime]{
-    opacity: 0;
+    opacity: 1;
     transition: 1s;
   }
   [data-anime="down"]{

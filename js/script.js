@@ -1,3 +1,4 @@
+//input de pesquisa
 const input = document.getElementById('filtro-livros');
 const list = document.getElementById('livros');
 const items = list.getElementsByTagName('li');

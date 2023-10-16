@@ -10,6 +10,15 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media only screen and (max-width:1000px) {
+  body{
+    background-image: url(/img/bg-mobile.jpg);
+    transition: .5s;
+  }
+  #content-index{
+    margin: 20vh 5vw 5vh 5vw;
+  }
+}
 a{
     color: #fff;
     text-decoration: none;
