@@ -12,7 +12,7 @@ body{
 }
 @media only screen and (max-width:1000px) {
   body{
-    background-image: url(/img/bg-mobile.jpg);
+    background-image: url(img/bg-mobile.jpg);
     transition: .5s;
   }
   #content-index{
