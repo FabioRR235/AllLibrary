@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#821b1b" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Página inicial</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/busca.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/icon-book.ico" type="image/x-icon">
+    <style>
+        /* Estilo para ocultar os conteúdos */
+        .conteudo {
+            display: none;
+        }
+    </style>
+</head>
+<header>
+    <nav data-anime="down" class="navbar navbar-expand-lg navbar-light fixed-top rounded-bottom rounded-5" id="navbar" style="background-color: #821b1b;  box-shadow: 1px 6px 15px 0px #821b1b;" >
+        <div class="container">
+          <a href="/index.html">
+            <img src="/img/logo.png" alt="">
+            <h1 class="navbar-brand text-white fw-semibold">Biblioteca para todos</h1>  
+          </a>
+         
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="biblioteca.html">
+              <button>
+                  <span>Livros</span>
+                  <svg width="45" height="45" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="37" cy="37" r="35.5" stroke="white" stroke-width="3"></circle>
+                  <path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="white"></path>
+                  </svg>            
+              </button>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+</header>
+<body>
+ <section class="content">
+    <div class="buttons">
+    <div>
+        <button class="mostrarConteudo">Potim</button>
+        <div class="conteudo" id="content-text" >
+            <p> Biblioteca Municipal Paulo Freire: </p>
+                <br> Local de atendimento: Rua Pedro Andrini, nº 41, Centro, Potim.</br>
+<br> e horário de atendimento: dias úteis das 7h30 às 12h e das 13h às
+16h30.</br>
+ 
+        </div>
+    </div>
+ 
+    <div>
+        <button class="mostrarConteudo">Aparecida do Norte</button>
+        <div class="conteudo" id="content-text">
+            <p>Não existem bibliotecas públicas ou privadas na cidade selecionada.</p>
+        </div>
+    </div>
+ 
+    <div>
+        <button class="mostrarConteudo">Guaratinguetá</button>
+        <div class="conteudo" id="content-text">
+            <p>Biblioteca Municipal Dr.Diomar Pereira Da Rocha:</p>
+            <br> R. Visc. do Rio Branco - Centro Histórico, Guaratinguetá - SP, 12500-190</br>
+            <br> EGF Biblioteca Unesp: </br>
+            <br> Av. Dr. Ariberto Pereira da Cunha, 333 - Portal das Colinas, Guaratinguetá - SP, 12516-410</br>
+            <br> Biblioteca Professor Sylvio José Marcondes Coelho:</br>
+            <br> Avenida Prof João R Alckimin 1501 - +FATEC, Guaratinguetá - SP, 12517-475</br>
+            <br> Biblioteca da EEAR:</br>
+            <br> Vila dos Oficiais, Guaratinguetá - State of São Paulo</br>
+        </div>
+    </div>
+ 
+    
+    <div>
+        <button class="mostrarConteudo">Lorena</button>
+        <div class="conteudo" id="content-text">
+            <p>Biblioteca Municipal De Lorena:</p>
+            <p>Av. Cap. Messías Ribeiro, 20 - Olaria, Lorena - SP, 12607-020</p>
+            <p>Biblioteca USP:</p>
+            <p>Universidade de São Paulo, Lorena-SP</p>
+            <p>Biblioteca IST:</p>
+            <p> UNIFATEA  CENTRO UNIVERSITÁRIO TERESA DÁVILA-Rua Presidente Roosevelt, 539 - Cruz, Lorena - SP, 12606-290</p>
+        </div>
+    </div>
+ 
+    <div>
+        <button class="mostrarConteudo">Pindamonhangaba</button>
+        <div class="conteudo" id="content-text">
+            <p>Biblioteca Pública Municipal Ver. Rômulo Campos D'Arace:</p>
+            <p>Rua Dr. Campos Sales, 535 - Centro, Pindamonhangaba - SP, 12422-020</p>
+            <p>Biblioteca Pública Municipal de Pindamonhangaba MARIA BERTHA CESAR ( Moreira Cesar):</p>
+            <p>R. Dr. Gonzaga, 163 - Moreira César, Pindamonhangaba - SP, 12440-200</p>
+            <p>Biblioteca Pública Municipal "Maria do Carmo dos Santos Gomes:</p>
+            <p> R. Guilherme Nicoleti, 1169 - Vila Sao Benedito, Pindamonhangaba - SP, 12445-120</p>
+            <p>Biblioteca Municipal de Pindamonhangaba:</p>
+            <p> R. Antônio Ramos, 36 - Vila Sao Benedito, Pindamonhangaba - SP, 12444-600</p>
+            <p>Biblioteca Pública Municipal "Araretama":</p>
+            <p>R. Cássio Pires Salgado, 150 - Res. Nova Esperanca, Pindamonhangaba - SP, 12426-270</p>
+        </div>
+    </div>
+ 
+    <div>
+        <button class="mostrarConteudo">Cachoeira Paulista</button>
+        <div class="conteudo" id="content-text">
+            <p>Biblioteca - Laboratório Associado de Combustão e Propulsão:</p>
+            <p>12630-000, Cachoeira Paulista - SP
+            </p>
+        </div>
+    </div>
+ 
+    <div>
+        <button class="mostrarConteudo">São José dos Campos</button>
+        <div class="conteudo" id="content-text">
+            <p>Biblioteca Pública Cassiano Ricardo:</p>
+            <p> R. Quinze de Novembro, 99 - Centro, São José dos Campos - SP, 12210-070</p>
+            <p>Biblioteca Pública Hélio Pinto Ferreira:</p>
+            <p>R. Prof. Henrique Jorge Guedes, 57 - Jardim das Industrias, São José dos Campos - SP, 12240-340</p>
+            <p>Biblioteca Pública Jansen Filho:</p>
+            <p>Rua Mário Antônio Abrantes da Fonseca, 410 - Campo dos Alemães, São José dos Campos - SP, 12239-390</p>
+            <p>Biblioteca Helena Molina:</p>
+            <p> Praça Emília Molina, 77 - Eugênio de Melo, São José dos Campos - SP, 12247-240</p>
+            <p>Biblioteca Machado de Assis:</p>
+            <p>R. Batatais, N 13 - Bosque dos Eucaliptos, São José dos Campos - SP, 12233-830</p>
+            <p>Biblioteca Ravi:</p>
+            <p>R. dos Astecas, 460 - Chácara Boa Vista, São José dos Campos - SP, 12214-460</p>
+            <p>Biblioteca Unifesp:</p>
+            <p>instituto de ciência e tecnologica Unifesp- Coqueiro, Sao Jose dos Campos - Estado de São Paulo</p>
+            <p>Biblioteca UNIVAP:</p>
+            <p>R. Sem Denominacao, 97 - Urbanova VI, São José dos Campos - SP, 12244-597</p>
+            <p>Biblioteca do ITA:</p>
+            <p>Campus do CTA, Sao Jose dos Campos - State of São Paulo</p>
+            <p>Biblioteca INEP:</p>
+            <p>Av. dos Astronautas - Jardim da Granja, São José dos Campos - SP, 12227-010</p>
+       
+        </div>
+    </div>
+ 
+    <div>
+        <button class="mostrarConteudo">Caçapava</button>
+        <div class="conteudo" id="content-text">
+            <p>Biblioteca Pública Edgard Portes:</p>
+            <p>Av. Cel. Manoel Inocêncio, 698 - Centro, Caçapava - SP, 12281-020</p>
+        </div>
+    </div>
+ 
+    <div>
+        <button class="mostrarConteudo">Cruzeiro</button>
+        <div class="conteudo" id="content-text">
+            <p>Biblioteca Pública Municipal Professora Marlene Sampaio Pinto:</p>
+            <p>R. Cel. José de Castro, 394 - Centro, Cruzeiro - SP, 12701-450</p>
+        </div>
+    </div>
+ 
+    <div>
+        <button class="mostrarConteudo">Caraguatatuba</button>
+        <div class="conteudo" id="content-text">
+            <p>Biblioteca Municipal Afonso Schmidt:</p>
+            <p>R. Santa Cruz, 496 - Centro, Caraguatatuba - SP, 11660-200</p>
+        </div>
+    </div>
+ 
+    <div>
+        <button class="mostrarConteudo">Jacareí</button>
+        <div class="conteudo" id="content-text">
+            <p>Biblioteca Municipal Macedo Soares:</p>
+            <p>Av. Nove de Julho, 215 - Jardim Pereira do Amparo, Jacareí - SP, 12327-682</p>
+            <p>Biblioteca Municipal João Batista Denis Netto:</p>
+            <p>Parque Meia Lua, Jacareí - State of São Paulo, 12335-090</p>
+            <p>BIBLIOTECA GESSIA SATIYO (NOVA ESPERANÇA):</p>
+            <p>Av. Lucas Nogueira Garcês - Jardim Esperanca, Jacareí - SP, 12325-030</p>
+            <p>Biblioteca Comunitária Ler Para Crescer (LPC):</p>
+            <p>Av. Dois - Jardim Pedramar, Jacareí - SP, 12329-055</p>
+        </div>
+    </div>
+    </div>
+ </section>
+   
+ 
+    <!-- Repita os blocos acima para os outros botões e conteúdos -->
+ 
+    <script>
+        // Captura todos os botões e conteúdos
+        const botoesMostrar = document.querySelectorAll(".mostrarConteudo");
+        const conteudosVisiveis = document.querySelectorAll(".conteudo");
+ 
+        // Adiciona um ouvinte de evento de clique a cada botão
+        for (let i = 0; i < botoesMostrar.length; i++) {
+            botoesMostrar[i].addEventListener("click", function() {
+                // Alterna a visibilidade do conteúdo associado ao botão clicado
+                if (conteudosVisiveis[i].style.display === "none") {
+                    conteudosVisiveis[i].style.display = "block";
+                } else {
+                    conteudosVisiveis[i].style.display = "none";
+                }
+            });
+        }
+    </script>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/show.js"></script>
+</html>
