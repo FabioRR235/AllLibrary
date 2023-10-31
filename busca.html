@@ -1,374 +1,235 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <title>Bibliotecas</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/busca.css">
-   
-</head>
-<body>
+    <title>Buscar Bibliotecas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/icon-book.ico" type="image/x-icon">
+    
+  </head>
+  <body class="p-3 m-0 border-0 bd-example m-0 border-0">
     <header>
-        <nav data-anime="down" class="navbar navbar-expand-lg navbar-light fixed-top rounded-bottom rounded-5" id="navbar" style="background-color: #821b1b;  box-shadow: 1px 6px 15px 0px #821b1b;" >
-            <div class="container">
-              <a href="/index.html">
-                <img src="/img/logo.png" alt="">
-                <h1 class="navbar-brand text-white fw-semibold">Biblioteca para todos</h1>  
+      <nav data-anime="down" class="navbar navbar-expand-lg fixed-top rounded-bottom rounded-5" style="background-color: #821b1b;box-shadow: 1px 6px 15px 0px #821b1b;">
+          <div class="container d-flex justify-content-center align-items-center">
+              <a href="biblioteca.html">
+                  <img src="img/logo.png" alt="" >
+                  <h1 class="navbar-brand text-white fw-semibold">Biblioteca para todos</h1>
               </a>
-             
-            </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a href="biblioteca.html">
-                  <button>
-                      <span>Livros</span>
-                      <svg width="45" height="45" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="37" cy="37" r="35.5" stroke="white" stroke-width="3"></circle>
-                      <path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="white"></path>
-                      </svg>            
-                  </button>
-                </a>
-              </li>
-            </ul>
           </div>
-        </nav>
-    </header>
-    <div class="buttons-all">
-        <h2 class="buttons-city" id="afogamentosBtn">Potim</h2>
-        <h2 class="buttons-city" id="convulsoesBtn">Aparecida do Norte</h2>
-        <h2 class="buttons-city" id="engasgamentoBtn">Guaratinguetá</h2>
-        <h2 class="buttons-city" id="queimaduraBtn">Lorena</h2>
-        <h2 class="buttons-city" id="fraturasBtn">Pindamonhangaba</h2>
-        <h2 class="buttons-city" id="mordidaBtn">Cachoeira Paulista</h2>
-        <h2 class="buttons-city" id="desmaiosBtn">São José dos Campos</h2>
-        <h2 class="buttons-city" id="derrameBtn">Caçapava</h2>
-        <h2 class="buttons-city" id="infartoBtn">Cruzeiro</h2>
-        <h2 class="buttons-city" id="infartoBtn">Caraguatatuba</h2>
-        <h2 class="buttons-city" id="infartoBtn">Jacarei</h2>
+      </nav>
+  </header>
+    
+    <div class="accordion" id="accordionExample" data-anime="up">
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Potim</button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <h2> Biblioteca Municipal Paulo Freire: </h2>
+                  <h3>
+                    Local de atendimento: Rua Pedro Andrini, nº 41, Centro, Potim.
+                    <br>
+                    Horário de atendimento: dias úteis das 7h30 às 12h e das 13h às
+                    16h30.
+                  </h3>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"> Aparecida do Norte</button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="accordion-body">
+                    <h2>Não existem bibliotecas públicas ou privadas na cidade selecionada.</h2>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree"> Guaratinguetá</button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <h2> Biblioteca Municipal Dr.Diomar Pereira Da Rocha: </h2>
+                  <h3>
+                    R. Visc. do Rio Branco - Centro Histórico, Guaratinguetá - SP, 12500-190
+                    
+                  </h3>
+                  <h2>EGF Biblioteca Unesp: 
+                    
+                  </h2>
+                  <h3>
+                    Av. Dr. Ariberto Pereira da Cunha, 333 - Portal das Colinas, Guaratinguetá - SP, 12516-410
+                    
+                  </h3>
+                  <h2>Biblioteca Professor Sylvio José Marcondes Coelho:
+                    
+                  </h2>
+                  <h3>
+                    Avenida Prof João R Alckimin 1501 - FATEC, Guaratinguetá - SP, 12517-475
+                    
+                  </h3>
+                  <h2>Biblioteca da EEAR:
+                    
+                  </h2>
+                  <h3>
+                    Vila dos Oficiais, Guaratinguetá - State of São Paulo
+                    
+                  </h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour"> Lorena</button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <h2>Biblioteca Municipal De Lorena:</h2>
+                  <h3>Av. Cap. Messías Ribeiro, 20 - Olaria, Lorena - SP, 12607-020</h3>
+                  <h2>Biblioteca USP:</h2>
+                  <h3>Universidade de São Paulo, Lorena-SP</h3>
+                  <h2>Biblioteca IST:</h2>
+                  <h3>UNIFATEA  CENTRO UNIVERSITÁRIO TERESA DÁVILA-Rua Presidente Roosevelt, 539 - Cruz, Lorena - SP, 12606-290</h3>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive"> Pindamonhangaba</button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <h2>Biblioteca Pública Municipal Ver. Rômulo Campos D'Arace:</h2>
+                  <h3>Rua Dr. Campos Sales, 535 - Centro, Pindamonhangaba - SP, 12422-020</h3>
+                  <h2>Biblioteca Pública Municipal de Pindamonhangaba MARIA BERTHA CESAR ( Moreira Cesar):</h2>
+                  <h3>R. Dr. Gonzaga, 163 - Moreira César, Pindamonhangaba - SP, 12440-200</h3>
+                  <h2>Biblioteca Pública Municipal "Maria do Carmo dos Santos Gomes:</h2>
+                  <h3>R. Guilherme Nicoleti, 1169 - Vila Sao Benedito, Pindamonhangaba - SP, 12445-120</h3>
+                  <h2>Biblioteca Municipal de Pindamonhangaba:</h2>
+                  <h3>R. Antônio Ramos, 36 - Vila Sao Benedito, Pindamonhangaba - SP, 12444-600</h3>
+                  <h2>Biblioteca Pública Municipal "Araretama":</h2>
+                  <h3>R. Cássio Pires Salgado, 150 - Res. Nova Esperanca, Pindamonhangaba - SP, 12426-270</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix"> Cachoeira Paulista</button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h2>Biblioteca - Laboratório Associado de Combustão e Propulsão:</h2>
+                <h3>12630-000, Cachoeira Paulista - SP</h3>
+              </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSeven">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven"> São José dos Campos</button>
+          </h2>
+          <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h2>Biblioteca Pública Cassiano Ricardo:</h2>
+                <h3>R. Quinze de Novembro, 99 - Centro, São José dos Campos - SP, 12210-070</h3>
+                <h2>Biblioteca Pública Hélio Pinto Ferreira:</h2>
+                <h3>R. Prof. Henrique Jorge Guedes, 57 - Jardim das Industrias, São José dos Campos - SP, 12240-340</h3>
+                <h2>Biblioteca Pública Jansen Filho:</h2>
+                <h3>Rua Mário Antônio Abrantes da Fonseca, 410 - Campo dos Alemães, São José dos Campos - SP, 12239-390</h3>
+                <h2>Biblioteca Helena Molina:</h2>
+                <h3>Praça Emília Molina, 77 - Eugênio de Melo, São José dos Campos - SP, 12247-240</h3>
+                <h2>Biblioteca Machado de Assis:</h2>
+                <h3>>R. Batatais, N 13 - Bosque dos Eucaliptos, São José dos Campos - SP, 12233-830</h3>
+                <h2>Biblioteca Ravi:</h2>
+                <h3>R. dos Astecas, 460 - Chácara Boa Vista, São José dos Campos - SP, 12214-460</h3>
+                <h2>Biblioteca Unifesp:</h2>
+                <h2>instituto de ciência e tecnologica Unifesp- Coqueiro, Sao Jose dos Campos - Estado de São Paulo</h2>
+                <h2>Biblioteca UNIVAP:</h2>
+                <h3>R. Sem Denominacao, 97 - Urbanova VI, São José dos Campos - SP, 12244-597</h3>
+                <h2>Biblioteca do ITA:</h2>
+                <h3>Campus do CTA, Sao Jose dos Campos - State of São Paulo</h3>
+                <h2>Biblioteca INEP</h2>
+                <h3>Av. dos Astronautas - Jardim da Granja, São José dos Campos - SP, 12227-010</h3>
+              </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingEight">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight"> Caçapava</button>
+          </h2>
+          <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h2>Biblioteca Pública Edgard Portes:</h2>
+                <h3>Av. Cel. Manoel Inocêncio, 698 - Centro, Caçapava - SP, 12281-020</h3>
+              </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingNine">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine"> Cruzeiro</button>
+          </h2>
+          <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h2>Biblioteca Pública Municipal Professora Marlene Sampaio Pinto</h2>
+                <h3>R. Cel. José de Castro, 394 - Centro, Cruzeiro - SP, 12701-450</h3>
+              </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTen">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen"> Caraguatatuba</button>
+          </h2>
+          <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h2>Biblioteca Municipal Afonso Schmidt</h2>
+                <h3>R. Santa Cruz, 496 - Centro, Caraguatatuba - SP, 11660-200</h3>
+              </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingEleven">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="true" aria-controls="collapseEleven"> Jacarei</button>
+          </h2>
+          <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h2>Biblioteca Municipal Macedo Soares:</h2>
+                <h3>Av. Nove de Julho, 215 - Jardim Pereira do Amparo, Jacareí - SP, 12327-682</h3>
+                <h2>Biblioteca Municipal João Batista Denis Netto</h2>
+                <h3>Parque Meia Lua, Jacareí - State of São Paulo, 12335-090</h3>
+                <h2>BIBLIOTECA GESSIA SATIYO (NOVA ESPERANÇA):</h2>
+                <h3>Av. Lucas Nogueira Garcês - Jardim Esperanca, Jacareí - SP, 12325-030</h3>
+                <h2>Biblioteca Comunitária Ler Para Crescer (LPC):</h2>
+                <h3>Av. Dois - Jardim Pedramar, Jacareí - SP, 12329-055</h3>
+              </div>
+          </div>
+        </div>
+
     </div>
 
-<section class="texto">
-    <div class="imagens">
-       
-        <img id="imagemAfogamentos" src="/imagens/afogamento-primeiros-socorros.jpg" alt="Imagem Afogamentos" style="display: none;" width="600px" height="400px">
-       
-        <h3 id="textoAfogamentos" style="display: none;"><pre><h3>1.    Primeiro de tudo: é necessário que seja chamado imediatamente os serviços de emergência, ou então,
-caso você mesmo não consiga chamar, busque por alguma outra pessoa imediatamente e peça para que ligue para
-emergência.
- 
- 
-2.  Busque manter a calma: é de extrema importância manter a calma para que a vítima possa ser ajudada da  
-melhor forma possível.
- 
- 
-3.  Tente alcançar a vítima: Caso seja seguro, tente alcançar a pessoa que está se afogando a partir da margem
-da água. Use algum objeto longo, como uma vara ou uma boia, para estender a ajuda e evitar entrar na água, a  
-menos que você tenha treinamento de salvamento aquático.
- 
- 
-4.  Lance um objeto flutuante: caso você não consiga alcançar a vítima diretamente, jogue um objeto flutuante,
-algo como- uma boia ou colete salva-vidas, para que a pessoa possa agarrá-lo e flutuar em segurança.
- 
- 
-5.  Seja cauteloso ao entrar na água: Se for necessário entrar na água para resgatar a vítima, tome cuidado para
-não colocar a sua própria vida em risco. Se você não tem treinamento em resgate aquático, tente manter algum objeto
-flutuante entre você e a pessoa que está se afogando para evitar que ela agarre você devido ao pânico do momento.
- 
- 
-6.  Inicia a RCP, se necessário: Se a pessoa estiver inconsciente e não estiver respirando, é de suma importância
-que você inicie imediatamente a RCP (ressuscitação cardiopulmonar). Isso envolve compressões torácicas e respiração
-boca a boca, são necessárias duas pessoas para realizar a RCP. Se você não estiver treinado em RCP, continue a chamar
-por ajuda enquanto faz o que puder para manter a vítima à tona.
- 
- 
- 
-</pre></h3>
- 
-        <img id="imagemConvulsoes" src="/imagens/convu.png" alt="Imagem Convulsões" style="display: none;" width="600px" height="400px">
-        <h3 id="textoConvulsoes" style="display: none;"><pre><h3>1.Mantenha a calma: A convulsão pode ser assustadora de se testemunhar, mas tente manter a calma sempre e
-            lembre-se de que a maioria das convulsões é de curta duração e raramente é fatal.
-           
-           
-2.  Proteja a pessoa: Certifique-se de que a pessoa esteja em segurança durante a convulsão. Afaste-a
-de objetos que sejam pontiagudos ou perigosos e que estejam em sua proximidade para evitar lesões. Você
-também pode colocar um travesseiro ou até algo macio sob a cabeça da pessoa para que ferimentos sejam evitados.
-           
-           
-3.  Não restrinja os movimentos: Não é adequado segurar a pessoa ou tentar forçar a sua boca a permanecer
-aberta. É um mito que quando uma pessoa convulsiona, ela pode engolir sua própria língua. Tentar restringir
-os movimentos pode ocasionar em lesões.
-           
-           
-4.  Vire a pessoa de lado: Quando a convulsão terminar e a pessoa já estiver relaxada, coloque-a de lado  
-para fazer com que qualquer líquido que possa estar na boca, escorra, evitando assim a aspiração.
-           
-           
-5.  Observe a duração: Cronometre a duração da convulsão. Caso dure mais de 5 minutos ou se outra convulsão
-iniciar imediatamente após o término da primeira, e chame imediatamente uma ambulância.
-           
-           
-6.  Ofereça apoio após a convulsão: Após a convulsão, a pessoa pode ficar confusa, desorientada ou até cansada.
-Ofereça a pessoa conforto e ajuda conforme seja necessário. Certifique-se de que a pessoa esteja respirando  
-correta e adequadamente, verifique também se há algum ferimento como resultado da convulsão e se houver,
-verifique se este necessitará de cuidados médicos.
-           
-           
-7.  Busque assistência médica: Se esta for a primeira convulsão da pessoa, ou se houverem circunstâncias específicas
-que deixem isso preocupante, como por exemplo uma lesão ocorrida durante a convulsão, é importantíssimo procurar    
-atendimento médico para avaliação e diagnóstico.
-           
- 
- 
- 
-</h3></pre></h3>
- 
-        <img id="imagemEngasgamento" src="/imagens/engasgar.jfif" alt="Imagem Engasgamento" style="display: none;" width="600px" height="400px">
-        <h3 id="textoEngasgamento" style="display: none;"><pre><h3>1.   Primeiro de tudo é necessário avaliar a situação, no caso, ver se a pessoa está realmente engasgada
-pois eles podem estar agarrando a garganta, tossindo violentamente ou sendo incapazes de falar ou respirar. Caso
- a pessoa esteja consciente, peça permissão para ajudar.
- 
- 
-2.  Se a pessoa estiver engasgada e não conseguir respirar, peça para alguém que estiver nas proximidades para
-chamar a emergência pelo número de ligação do seu país, no caso do Brasil o 192.
- 
- 
-3.  Realize a manobra de Heimlich: fique atrás da pessoa engasgada, coloque seu punho em posição de concha, com
-o polegar em direção ao abdômen da pessoa e o punho acima do umbigo, agarre o punho com a outra mão, aplique    
-pressão rápida e firme para cima, em direção ao peito da pessoa, utilizando movimentos bruscos e repetidos.
-Isso é chamado de manobra de Heimlich e é projetado para expulsar o objeto obstruindo as vias respiratórias.
-Continue fazendo a manobra até que a pessoa seja capaz de respirar ou até que ela perca a consciência.
- 
-<img class="tutorial1" src="/imagens/tutorialAdultoE.webp" alt="" width="600px" height="400px">
- 
- 
- 4. Caso a pessoa perca a consciência o que se deve fazer é: colocá-la cuidadosamente no chão e iniciar a RCP
-(Reanimação Cardiopulmonar) de forma imediata, somente se você tiver o treinamento necessário. Novamente ligue
-ou peça para alguém chamar o serviço de emergência, e siga as instruções do operador de emergência.
- 
- 
- 
-</pre></h3>
- 
-        <img id="imagemQueimadura" src="/imagens/queimadura.webp" alt="Imagem queimadura" style="display: none;" width="600px" height="400px">
-        <h3 id="textoQueimadura" style="display: none;"><pre><h3>Primeiro passo é afastar a criança e o bebê de perigos adicionais, lave a queimadura com agua corrente de
-10 a 20 minutos. Não use métodos caseiros para queimadura como passar pasta de dente, pomadas, gelo, etc.
-<img class="tutorial1" src="/imagens/tutorial4.jpg" alt="imagem queimadura" width="600px" height="400px">
-Se houver objetos ou panos colados na ferida, não retire-os à força. Se houver a formação de bolhas, não
-estoure, pois o risco de infecção aumenta. Logo após, encaminhe a vitima ao pronto socorro.
- 
- 
- 
- 
- 
-l
-</pre></h3>
- 
-        <img id="imagemFraturas" src="/imagens/fraturas.jpg" alt="Imagem Fraturas" style="display: none;" width="600px" height="400px">
-        <h3 id="textoFraturas" style="display: none;"><pre><h3>1. Mantenha a calma: Tanto a vítima quanto os que estão prestando assistência devem manter a calma, isso ajuda
-a tomar decisões melhores e mais adequadas, o que minimiza o estresse da situação.
- 
- 
-2.  Imobilize a área afetada: Se possível, evite movimentar a área fraturada para reduzir o risco de causar mais
-danos. Imobilize a área usando uma tala, se estiver disponível, ou materiais encontrados no local, como pedaços
-de madeira, jornal ou até mesmo roupar enroladas. Certifique-se de que a área ao redor do local fraturado esteja
-imobilizada.
- 
- 
-3.  Eleve a área afetada: Se a fratura envolver um membro, como um braço ou perna, eleve a área suavemente, caso
-isso seja possível, dessa forma o inchaço reduzira. Use um travesseiro, casaco ou algo semelhante para apoiar o
-membro elevado.
- 
- 
-4.  Aplique gelo (opcional): Se houver um inchaço significativo na área, você pode aplicar uma compressa fria ou
-gelo enrolado em um pano fino sobre a área fraturada por cerca de 15 a 20 minutos a cada hora. Certifique-se de
-não aplicar gelo de forma direta na pele, isso pode causar queimaduras.
- 
-5.  Não tente colocar o osso no lugar: Jamais tente manipular a fratura para alinhar os ossos, isso deve ser feito
-somente por um profissional qualificado, como um médico.
- 
- 
-6.  Evite dar alimentos ou líquidos: Evite oferecer alimentos ou líquidos á pessoa que sofreu a fratura, pois ela
-pode necessitar de cirurgia ou passar por algum procedimento médico que requer estômago vazio.
- 
- 
-7. Chame uma ambulância: É de extrema importância buscar atendimento médico. Ligue para o serviço de emergência, ou
-para o SAMU no caso do Brasil (192), para assim obter assistência médica profissional, onde avaliarão a fratura e
-tomarão as medidas necessárias.
- 
- 
-8.  Fique com a pessoa: Mantenha-se ao lado da pessoa para oferecer algum conforto ou apoio emocional enquanto aguardam
-a ajuda médica.
- 
- 
- 
- 
- 
- 
- 
-</pre></h3>
- 
-        <img id="imagemMordida" src="/imagens/piadura.jpg" alt="Imagem Mordida" style="display: none;" width="600px" height="400px">
-        <h3 id="textoMordida" style="display: none;"><pre><h3> 1. Em situações como essas, o primeiro passo é buscar atendimento hospitalar o mais rápido possível.
- 
-2. Enquanto aguarda atendimento médico, é importante manter o paciente em repouso.
-           
-3. O próximo passo é a avaliação da necessidade de aplicação de soro antiofídico, o qual é necessário em caso de picadas
-de serpentes venenosas. Se possível, é importante levar o animal responsável pela picada ao serviço de saúde para identificação.
-           
-4. Da mesma forma, nos casos de acidentes envolvendo aranhas ou escorpiões, é fundamental buscar atendimento hospitalar
-o mais rápido possível.
-           
-5. Enquanto aguarda atendimento médico, mantenha o paciente em repouso.
-           
-6. Para picadas de aranhas ou escorpiões, a avaliação da necessidade de aplicação de soro antiaracnídico também é importante.
-           
-Lembre-se:
-           
-Em nenhuma circunstância, utilize um torniquete ou garrote.
-Não tente furar, cortar, espremer ou fazer sucção no local da picada.
-Evite aplicar pomadas, cremes ou qualquer substância no local.
-Não consuma álcool ou tome qualquer medicamento sem orientação médica..
- 
- 
- 
- 
- 
- 
- 
- 
-</pre></h3></h3>
- 
-        <img id="imagemDesmaios" src="/imagens/desmaios.jfif" alt="Imagem Desmaios" style="display: none;" width="600px" height="400px">
-        <h3 id="textoDesmaios" style="display: none;"><pre><h3>1.   Verifique a segurança: Antes de se aproximar da pessoa, certifique-se de que o ambiente seja seguro
-para você e para a vítima. Verifique também se não há riscos iminentes, como tráfego, objetos perigosos ou o risco de queda.
- 
- 
-2.  Verifique a respiração e os sinais vitais: Após garantir a segurança, incline-se sobre a pessoa e verifique se ela está
-respirando. Observe se o peito sobe e desce. Verifique também o pulso da pessoa no pescoço (artéria carótida) por cerca de
-10 segundos.
-<img class="tutorial1" src="/imagens/arteria.webp" alt="imagem arteria"  width="600px" height="400px">
-Caso a pessoa não estiver respirando ou não tiver pulsação, inicie a RCP (ressuscitação cardiopulmonar) imediatamente.
- 
- 
-3.  Posicione a pessoa deitada: Se a pessoa estiver respirando normalmente e com pulso, coloque-a deitada de costas em um local
-seguro. Eleve um pouco as pernas da pessoa (cerca de 30 centímetros) para melhorar o fluxo sanguíneo para o cérebro. Pode ser que
-isso ajuda a pessoa a se recuperar mais rapidamente.
- 
- 
-4.  Afrouxe roupas apertadas: Se possível, afrouxe roupas que podem estar apertando a região do pescoço, peito ou cintura da pessoa,
-assim facilitando a respiração e a circulação sanguínea.
- 
- 
-5.  Mantenha a pessoa calma: Quando a pessoa recobrar a consciência, mantenha-a calma e tranquila. Explique para a pessoa o ocorrido
-e peça para que ela descanse até se sentir melhor.
- 
- 
-6.  Hidrate e monitore: Ofereça água à pessoa assim que ela se sentir capaz de beber, mas jamais force a ingestão de quaisquer líquidos.
-Fique com a pessoa por algum tempo e monitore seu estado. Se o desmaio tiver sido causado por uma situação específica, como desidratação
-ou calor excessivo, certifique-se de que a pessoa esteja devidamente hidratada e em um ambiente que seja mais fresco.
- 
- 
-7.  Procure ajuda médica: Caso o desmaio seja inexplicável, e se a pessoa tiver um histórico de desmaios que seja recorrente, se ela estiver
-grávida ou se houverem lesões relacionadas ao desmaio, é importante procurar ajuda médica. Mesmo que a pessoa aparente ter se recuperado
-completamente, pode ser apropriado que seja feita uma consulta ao médico para que seja determinada a causa do desmaio.
- 
- 
- 
- 
- 
- 
- 
- 
-</pre></h3>
- 
-<img id="imagemDerrame" src="/imagens/derrame.jpeg" alt="Imagem Derrame" style="display: none;" width="600px" height="400px">
-        <h3 id="textoDerrame" style="display: none;"><pre><h3>1.  Ligue para o serviço de emergência: Chame imediatamente o serviço de emergência ou 192 (SAMU no Brasil)
-e informe que você suspeita de um derrame. Além disso fornecer informações precisas e detalhadas é fundamental.
- 
- 2. Mantenha a pessoa calma e confortável: Coloque a pessoa em uma posição confortável, deitada de lado, ou, com
-  cabeça ligeiramente elevada para facilitar a respiração. Mantenha-a calma e tranquilize-a enquanto aguardam a ajuda.
- 
- 
-3.  Não ofereça alimentos ou líquidos: Evite dar qualquer alimento ou bebida à pessoa que está tendo um derrame, pois
-ela pode ter dificuldade em engolir ou correr o risco de aspiração o que causaria um engasgamento podendo levar óbito.
- 
- 
-4.  Observe os sinais vitais: Caso seja possível, observe os sinais vitais da pessoa, como a frequência cardíaca e a
-respiração, enquanto isso aguardem a ajuda médica. Esteja preparado para realizar a RCP (ressuscitação cardiopulmonar)
-se a pessoa parar de respirar ou o coração parar de bater.
- 
- 
-5.  Anote o horário de início dos sintomas: Tente determinar quando os sintomas começaram, pois isso é uma informação
-valiosa para os médicos.
- 
- 
- 
- 
- 
- 
- 
- 
- 
-</pre></h3>
- 
-<img id="imagemInfarto" src="/imagens/infarto.webp" alt="Imagem Infartos" style="display: none;" width="600px" height="400px">
-        <h3 id="textoInfarto" style="display: none;"><pre><h3>1.    Chame uma ambulância imediatamente: O tempo é essencial para o tratamento de um infarto. Ligue para o
-serviço de emergência ou 192(SAMU no Brasil) assim que suspeitar que alguém está infartando. Não tente transportar a
-pessoa para o hospital por conta própria, pois a assistência médica é mais qualificada, adequada e necessária no local.
- 
- 
-2.  Faça a pessoa sentar-se ou deitar-se: Ajude a pessoa a se posicionar de maneira que fique confortável, é preferível
-uma posição semi-sentada, com as costas apoiadas e os joelhos devem estar dobrados. Isso pode ajudara a aliviar a pressão
-sobre o coração.
- 
- 
- 3. Ofereça aspirina (se disponível): Se a pessoa não tiver diagnóstico alérgico à aspirina e não possuir
-contraindicações médicas, você pode oferecer uma aspirina e que seja preferencialmente mastigável. A aspirina
-ajuda a afinar o sangue e pode ajudar a desbloquear as artérias coronárias.
- 
- 
-4.  Monitore os sinais vitais: Mantenha-se atento aos sinais vitais da pessoa, como a pulsação, respiração e
-nível de consciência. Esteja preparado para realizar a RCP (ressuscitação cardiopulmonar) caso a pessoa perca
-a respiração ou o coração pare de bater.
-0,
- 
-5.  Fique calmo e tranquilize a pessoa: O estresse só vai piorar a situação. Fique calmo e tranquilize a pessoa,
-explicando que a ajuda já está a caminho.
- 
- 
-6.  Evite oferecer alimentos ou líquidos: Não é seguro dar alimentos ou líquidos à pessoa que está tendo um infarto,
-pois isso pode interferir nos procedimentos médicos que serão realizados.
- 
- 
-7.  Não administre medicamentos: Evite dar qualquer medicamento além de aspirina a menos que seja sob a orientação
-de um profissional de saúde.
- 
- 
-8.  Esteja preparado para a RCP: Se a pessoa perder a consciência e parar de respirar, esteja preparado para iniciar
-a Ressuscitação Cardiopulmonar, se souber como fazê-la. A RCP pode ser crucial para manter o fluxo sanguíneo até que
-a ajuda médica chegue.
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-</pre></h3>
-       
-    </div>
-</section>
-</main>
-</body>
-<script src="js/buttons.js"></script>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="js/buttons.js"></script>
+  <script src="js/show.js"></script>
 </html>

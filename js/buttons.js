@@ -1,5 +1,5 @@
-// Função para mostrar a imagem e texto de acordo com o botão clicado
-function showContent(btnId) {
+ // Função para mostrar a imagem e texto de acordo com o botão clicado
+ function showContent(btnId) {
     // Defina um objeto de mapeamento de botões para identificar as imagens e textos correspondentes
     const buttonMapping = {
         afogamentosBtn: { imageId: "imagemAfogamentos", textId: "textoAfogamentos" },

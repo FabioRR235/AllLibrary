@@ -8,177 +8,77 @@
 body{
   background-color: bisque;
 }
-.buttons-all{
-  margin-top: 18vh;
-}
-.buttons-city {
-  position: relative;
-  text-align: center;
-  padding: 25px;
-  top: 50px;
-  width: 300px;
-  cursor: pointer;
+a{
   color: white;
-  background-color: #821b1b;
-  border: 3px solid white;
-  border-radius: 20px;
-  transition: transform 0.3s ease-in-out;
-}
-
-
-.imagens {
-  position: absolute;
-  left: 750px;
-  top: 100px;
-  animation: flutuar 2s ease-in-out infinite alternate;
-}
-
-
-#imagemAfogamentos{
-  position: absolute;
-  top: 100px;
-  border: 8px solid #5c0000;
-  border-radius: 15px;
- 
- 
-}
-
-#textoAfogamentos{
-  position:absolute;
-  left: -200px;
-  top: 500px;
-}
-
-#imagemConvulsoes{
-  position: absolute;
-  top: 100px;
-  border: 8px solid #5c0000;
-  border-radius: 15px;
- 
- 
-}
-
-#textoConvulsoes{
-  position:absolute;
-  left: -200px;
-  top: 500px;
-}
-
-#imagemEngasgamento{
-  position: absolute;
-  top: 100px;
-  border: 8px solid #5c0000;
-  border-radius: 15px;
- 
- 
-}
-
-#textoEngasgamento{
-  position:absolute;
-  left: -200px;
-  top: 500px;
-}
-
-#imagemQueimadura{
-  position: absolute;
-  top: 100px;
-  border: 8px solid #5c0000;
-  border-radius: 15px;
- 
- 
-}
-
-#textoQueimadura{
-  position:absolute;
-  left: -200px;
-  top: 500px;
-}
-
-#imagemFraturas{
-  position: absolute;
-  top: 100px;
-  border: 8px solid #5c0000;
-  border-radius: 15px;
- 
- 
-}
-
-#textoFraturas{
-  position:absolute;
-  left: -200px;
-  top: 500px;
-}
-
-#imagemMordida{
-  position: absolute;
-  top: 100px;
-  border: 8px solid #5c0000;
-  border-radius: 15px;
- 
- 
-}
-
-#textoMordida{
-  position:absolute;
-  left: -200px;
-  top: 500px;
-}
-
-#imagemDesmaios{
-  position: absolute;
-  top: 100px;
-  border: 8px solid #5c0000;
-  border-radius: 15px;
- 
- 
-}
-
-#textoDesmaios{
-  position:absolute;
-  left: -200px;
-  top: 500px;
-}
-
-#imagemDerrame{
-  position: absolute;
-  top: 100px;
-  border: 8px solid #5c0000;
-  border-radius: 15px;
-
-}
-
-#textoDerrame{
-  position:absolute;
-  left: -200px;
-  top: 500px
-}
-
-#imagemInfarto{
-  position: absolute;
-  top: 100px;
-  border: 8px solid #5c0000;
-  border-radius: 15px;
-
-}
-
-#textoInfarto{
-  position:absolute;
-  left: -200px;
-  top: 500px
-
-}
-
-.tutorial1{
-  position: relative;
-  left: 200px;
-  border: 8px solid #5c0000;
-  border-radius: 15px;
- 
-}
-
-
-.texto{
+  text-decoration: none;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
+  font-family: var(--font-content);
+  font-weight: 400;
+}
+/*Nav-Bar*/
+.navbar{
+  justify-content: baseline;
+  font-family: var(--font-content);
+  z-index: 1000;
+  top: 0 ;
+  padding: 0px 70px 0px 70px;
+}
+.navbar-brand{
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+.rounded-bottom {
+  border-bottom-right-radius: 2.25rem!important;
+  border-bottom-left-radius: 2.25rem!important;
+}
+.accordion{
+  margin: 0px 5% 0px 5%;
+}
+.accordion-body h2{
+  text-decoration: underline;
+}
+.accordion h3{
+  margin-left: 15px;
+}
+.accordion-item{
+  border-color: #821b1b;
+}
+.accordion-button{
+  background-color: #821b1b;
+  color: #fff;
+  font-family: var(--font-content);
+  font-size: 25px;
+}
+.accordion-body{
+  background-color: bisque;
+}
+.accordion-button:not(.collapsed){
+  color: white;
+  background-color: #a53131;
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+}
+
+/*animação*/
+[data-anime]{
+  opacity: 1;
+  transition: 1s;
+}
+[data-anime="down"]{
+  transform: translate3d(0,-100px,0);
+}
+[data-anime="up"]{
+  transform: translate3d(0,100px,0);
+}
+[data-anime="left"]{
+  transform: translate3d(-100%,0x,0);
+}
+
+[data-anime="right"]{
+  transform: translate3d(50px,0,0);
+}
+[data-anime].animate{
+  opacity: 1;
+  transform: translate3d(0,0,0);
 }

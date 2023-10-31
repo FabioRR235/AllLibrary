@@ -8,10 +8,21 @@
 body{
     background-color: bisque;
 }
-
+a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+a:hover{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
 /*Nav-Bar*/
 .navbar{
+    display: flex;
     justify-content: baseline;
+    align-items: center;
     font-family: var(--font-content);
     z-index: 1000;
     top: 0 ;
@@ -25,7 +36,40 @@ body{
     border-bottom-right-radius: 2.25rem!important;
     border-bottom-left-radius: 2.25rem!important;
 }
-
+/*Botão para a proxima página*/
+button {
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+    font-family: var(--font-content);
+    padding: 20px 70px;
+    border-radius: 100px;
+    background: transparent;
+    border: 3px solid white;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    margin-right: 45px;
+    height: 70px;
+  }
+  
+  button:hover {
+    background-color: transparent;
+  }
+  
+  button > svg {
+    width: 34px;
+    margin-left: 10px;
+  }
+  
+  button:hover svg {
+    transform: translateX(5px);
+    transition: all .3s;
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
 /*Barra de pesquisa*/
 input[type="text"] {
     width: 350px;
@@ -36,7 +80,6 @@ input[type="text"] {
     border: 3px solid white;
     border-radius: 10px;
     font-size: 35px;
-    margin-top: 25px;
 }
 input[type="text"]:focus{
     width: 500px;
